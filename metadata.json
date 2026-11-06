@@ -1,0 +1,6 @@
+{
+  "name": "스파이크온! 중학교 배구 수업 마스터",
+  "description": "중학생을 위한 스마트 체육 배구 수업 가이드 및 인터랙티브 전술/기록 학습 웹앱",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,51 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-canvas: #F8F9FA;
+    --card-bg: #FFFFFF;
+    --border-color: #E9ECEF;
+  }
+
+  .dark {
+    --bg-canvas: #0F172A;
+    --card-bg: #1E293B;
+    --border-color: #334155;
+  }
+
+  body {
+    font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+    background-color: var(--bg-canvas);
+    color: #1E293B;
+    transition: background-color 0.25s ease, color 0.25s ease;
+  }
+
+  .dark body {
+    color: #F1F5F9;
+  }
+}
+
+/* Custom scrollbars for clean UI */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #CBD5E1;
+  border-radius: 9999px;
+}
+.dark ::-webkit-scrollbar-thumb {
+  background: #475569;
+}
+
+/* Pulse court animation */
+@keyframes court-glow {
+  0%, 100% { opacity: 0.9; }
+  50% { opacity: 1; }
+}
+.animate-court {
+  animation: court-glow 3s infinite ease-in-out;
+}
